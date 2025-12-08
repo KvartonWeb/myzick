@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Music Generator{% endblock %}
+
+{% block body %}
+<div class="container py-4">
+
+    {#toolbar#}
+
+    {{ include('app/_toolbar.html.twig') }}
+
+
+    {#table#}
+
+    <div id="tableView">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+            <tr>
+                <th>#</th>
+                <th>Song</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Genre</th>
+            </tr>
+            </thead>
+
+            <tbody id="songTableBody">
+                {#rows#}
+            </tbody>
+        </table>
+
+        <nav class="d-flex justify-content-center mt-3">
+            <ul class="pagination pagination-sm" id="pagination">
+                {#pagination#}
+            </ul>
+        </nav>
+    </div>
+
+
+    {#images#}
+
+    <div id="galleryView" class="row g-3 d-none">
+        {#images#}
+    </div>
+
+</div>
+
+{% endblock %}
+
+

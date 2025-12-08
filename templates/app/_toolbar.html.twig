@@ -1,0 +1,31 @@
+    <div class="row g-3 align-items-center mb-4">
+
+        <div class="col-auto">
+            <label class="form-label fw-semibold mb-0">Language</label>
+            <select id="lang" class="form-select form-select-sm">
+                <option value="en">English (US)</option>
+                <option value="ge">Georgian (GE)</option>
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label class="form-label fw-semibold mb-0">Seed</label>
+            <input id="seed" type="number" class="form-control form-control-sm" value="1">
+        </div>
+
+        <div class="col-auto">
+            <label class="form-label fw-semibold mb-0">Likes</label>
+            <input id="likes" type="range" class="form-range" min="0" max="10" step="0.1" value="3.5" style="width:180px;">
+        </div>
+
+        <div class="col-auto">
+            <div class="btn-group">
+                <button id="btnTable" class="btn btn-outline-primary active">
+                    <i class="bi bi-table"></i>
+                </button>
+                <button id="btnGallery" class="btn btn-outline-primary">
+                    <i class="bi bi-grid"></i>
+                </button>
+            </div>
+        </div>
+    </div>
